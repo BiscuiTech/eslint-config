@@ -1,4 +1,4 @@
-# No-Sweat™ Eslint and Prettier Setup
+# Eslint and Prettier Setup
 These are my settings for ESLint and Prettier
 
 You might like them - or you might not. Don't worry you can always change them.
@@ -8,7 +8,7 @@ You might like them - or you might not. Don't worry you can always change them.
 * Fixes issues and formatting errors with Prettier
 * Lints + Fixes inside of html script tags
 * Lints + Fixes React via eslint-config-airbnb
-* You can see all the [rules here](https://github.com/wesbos/eslint-config-wesbos/blob/master/.eslintrc.js) - these generally abide by the code written in my courses. You are very welcome to overwrite any of these settings, or just fork the entire thing to create your own.
+* You can see all the [rules here](https://github.com/biscuitech/eslint-config/blob/master/.eslintrc.js) - these generally abide by the code written in my courses. You are very welcome to overwrite any of these settings, or just fork the entire thing to create your own.
 
 ## Installing
 
@@ -26,7 +26,7 @@ I also install globally so that any project or rogue JS file I write will have l
 2. Then we need to install everything needed by the config:
 
 ```
-npx install-peerdeps --dev eslint-config-wesbos
+npx install-peerdeps --dev @biscuitech/eslint-config
 ```
 
 3. You can see in your package.json there are now a big list of devDependencies.
@@ -36,7 +36,7 @@ npx install-peerdeps --dev eslint-config-wesbos
 ```json
 {
   "extends": [
-    "wesbos"
+    "@biscuitech/eslint-config"
   ]
 }
 ```
@@ -59,7 +59,7 @@ Tip: You can alternatively put this object in your `package.json` under the prop
 1. First install everything needed:
 
 ```
-npx install-peerdeps --global eslint-config-wesbos
+npx install-peerdeps --global @biscuitech/eslint-config
 ```
 (**note:** npx is not a spelling mistake of **npm**. `npx` comes with when `node` and `npm` are installed and makes script running easier 😃)
 
@@ -75,7 +75,7 @@ In your `.eslintrc` file, it should look like this:
 ```json
 {
   "extends": [
-    "wesbos"
+    "@biscuitect/eslint-config"
   ]
 }
 ```
@@ -89,7 +89,7 @@ If you'd like to overwrite eslint or prettier settings, you can add the rules in
 ```js
 {
   "extends": [
-    "wesbos"
+    "@biscuitech/eslint-config"
   ],
   "rules": {
     "no-console": 2,
