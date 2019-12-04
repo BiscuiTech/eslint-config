@@ -136,6 +136,6 @@ module.exports = {
     "html",
     "prettier",
     "react-hooks",
-    "@babel/plugin-proposal-optional-chaining"
+    "proposal-optional-chaining"
   ]
 }
